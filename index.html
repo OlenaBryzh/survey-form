@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="survey.css">
+</head>
+<body>
+  <h1 id="title">Software Feedback Survey </h1>
+  <p id="description"> We appreciate if you take the time to help us work better</p>
+<div id="form">
+  <form id='survey-form'>
+    <label id= "name-label">
+      <p>Name</p>
+    </label>
+    <input id="name" type="text" placeholder="Enter Your Name" required/>
+    <label id="email-label">
+      <p>Email</p>
+    </label>
+    <input id="email" type="text" placeholder="Enter Your email" required/>
+    <label id="number-label">
+      <p>Duration of use</p>
+    </label>
+    <input id="number" type="number" placeholder="Chouse the number of months" min="1" max="1000" required/>
+    <p>Which platform do you use?</p>
+    <select id="dropdown">      
+      <option value="default">Windows</option>d 
+      <option value="Linux">Linux</option>
+      <option value="Mac OS">Mac OS</option>
+      <option value="Other">Other</option>
+    </select>  
+    <div>
+      <p>How did you hear about our software?</p>
+      <input type="checkbox" name="sources" value="Email">Email</input>
+      <br>
+      <input type="checkbox" name="sources" value="Word of Mout">Word of Mout</input>
+      <br>
+      <input type="checkbox" name="sources" value="Social Media<">Social Media</input>
+      <br>
+      <input type="checkbox" name="sources" value="Advertisements">Advertisements
+      </input>
+      <br>
+      <input type="checkbox" name="sources" value="Search">Search</input>
+    </div>
+    <div>
+      <p>Did you purchase our softwear?</p>
+      <input type="radio" name="purchase" value="1">Yes</input>
+      <br>
+      <input type="radio" name="purchase" value="1">No</input>
+      <br>
+      <input type="radio" name="purchase" value="1">Still deciding</input>    
+    </div>   
+    <div>
+      <textarea id="comment" rows="4" cols="40">Please let us any comments here</textarea>
+      <br>
+      <input id="submit" type="submit" name="submit" value="Submit">
+    </div>
+  </form>
+</div>
+</body>
+</html>
